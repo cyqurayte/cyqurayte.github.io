@@ -7,7 +7,7 @@
 <link rel="stylesheet" type="text/css" href="./Qgis2threejs.css">
 <script src="./threejs/three.min.js"></script>
 <script src="./threejs/OrbitControls.js"></script>
-<script src="./proj4js/proj4.js"></script>
+
 <script src="./Qgis2threejs.js"></script>
 </head>
 <body>
@@ -93,8 +93,6 @@
 Q3D.Config.allVisible = true;
 Q3D.Config.bgColor = 0x000000;
 Q3D.Config.localMode = true;
-Q3D.Config.northArrow.visible = true;
-Q3D.Config.northArrow.color = 0xffffff;
 if (typeof proj4 === "undefined") document.getElementById("lib_proj4js").style.display = "none";
 
 var app = Q3D.application,
